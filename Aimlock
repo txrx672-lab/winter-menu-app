@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Menu - GitHub Hosted</title>
+    
+    <!-- إعدادات PWA -->
+    <link rel="manifest" href="/winter-menu-app/manifest.json">
+    <meta name="theme-color" content="#d116b2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0a0a2a, #1a1a4a);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            background: linear-gradient(45deg, #d116b2, #00bfff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 20px 0;
+        }
+        
+        .github-steps {
+            text-align: right;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            border-radius: 15px;
+        }
+        
+        .step {
+            padding: 15px;
+            margin: 10px 0;
+            border-right: 3px solid #d116b2;
+        }
+        
+        .code {
+            background: #1a1a1a;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: monospace;
+            margin: 10px 0;
+            text-align: left;
+            direction: ltr;
+            overflow-x: auto;
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #d116b2, #00bfff);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 20px 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>🎮 Winter Menu App</h1>
+        <p>تطبيق متكامل مجانًا على GitHub</p>
+        
+        <div class="github-steps">
+            <h2>📁 خطوات رفع الملف على GitHub:</h2>
+            
+            <div class="step">
+                <h3>1. إنشاء حساب GitHub</h3>
+                <p>سجل في <a href="https://github.com" style="color: #00bfff;">github.com</a> مجانًا</p>
+            </div>
+            
+            <div class="step">
+                <h3>2. إنشاء مستودع جديد</h3>
+                <p>انقر على + → New Repository</p>
+                <div class="code">
+                    Repository name: winter-app<br>
+                    Public: ✓<br>
+                    Initialize with README: ✓
+                </div>
+            </div>
+            
+            <div class="step">
+                <h3>3. رفع الملفات</h3>
+                <p>اسحب وأسقط ملف HTML هنا:</p>
+                <div class="code">
+                    اسم الملف: index.html<br>
+                    يمكنك إضافة: style.css, script.js<br>
+                    أيقونة: icon.png (180x180)
+                </div>
+            </div>
+            
+            <div class="step">
+                <h3>4. تفعيل GitHub Pages</h3>
+                <p>Settings → Pages → Source: main branch → Save</p>
+                <div class="code">
+                    بعد 2 دقيقة سيظهر رابطك:<br>
+                    https://[username].github.io/winter-app
+                </div>
+            </div>
+        </div>
+        
+        <div style="margin: 40px 0;">
+            <a href="https://github.com/new" class="btn" target="_blank">🚀 ابدأ الآن على GitHub</a>
+            <a href="#demo" class="btn" style="background: linear-gradient(45deg, #00b833, #00ff88);">📱 تجربة التطبيق</a>
+        </div>
+        
+        <!-- نموذج تطبيق -->
+        <div id="demo" style="background: rgba(0,0,0,0.5); padding: 30px; border-radius: 15px; margin-top: 40px;">
+            <h2>🎯 معاينة التطبيق</h2>
+            <div style="display: inline-block; background: #111; padding: 20px; border-radius: 20px; margin: 20px;">
+                <div style="width: 300px; height: 500px; background: #222; border-radius: 10px; overflow: auto; padding: 20px; text-align: right;">
+                    <h3 style="color: #d116b2;">❄️ Winter Menu</h3>
+                    <div style="margin: 20px 0;">
+                        <div style="background: rgba(209,22,178,0.2); padding: 10px; margin: 10px 0; border-radius: 5px;">🎯 Aimlock: ON</div>
+                        <div style="background: rgba(209,22,178,0.2); padding: 10px; margin: 10px 0; border-radius: 5px;">🎮 Aimbot: ON</div>
+                        <div style="background: rgba(209,22,178,0.2); padding: 10px; margin: 10px 0; border-radius: 5px;">👁️ Aimfov: 75%</div>
+                        <div style="background: rgba(209,22,178,0.2); padding: 10px; margin: 10px 0; border-radius: 5px;">⚡ AutoAim: ON</div>
+                    </div>
+                    <button style="background: #d116b2; color: white; border: none; padding: 15px; width: 100%; border-radius: 10px; margin-top: 20px;">💾 حفظ الإعدادات</button>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px;">
+                <p>🔗 رابط التطبيق بعد الرفع:</p>
+                <div class="code">
+                    https://[اسمك].github.io/winter-app
+                </div>
+            </div>
+        </div>
+        
+        <!-- ملفات ضرورية -->
+        <div style="margin-top: 40px; text-align: left; direction: ltr;">
+            <h3>📄 الملفات المطلوبة للرفع:</h3>
+            <div class="code">
+                📁 winter-app/<br>
+                ├── 📄 index.html (هذا الملف)<br>
+                ├── 📄 manifest.json (إعدادات PWA)<br>
+                ├── 📄 service-worker.js (للعمل دون إنترنت)<br>
+                └── 📁 icons/ (أيقونات التطبيق)<br>
+                    ├── icon-192.png<br>
+                    └── icon-512.png
+            </div>
+        </div>
+        
+        <!-- روابط سريعة -->
+        <div style="margin-top: 40px;">
+            <h3>⚡ روابط مهمة:</h3>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px;">
+                <a href="https://github.com" class="btn" style="padding: 10px 20px; font-size: 14px;">GitHub</a>
+                <a href="https://pages.github.com" class="btn" style="padding: 10px 20px; font-size: 14px; background: linear-gradient(45deg, #222, #444);">GitHub Pages</a>
+                <a href="https://git-scm.com/downloads" class="btn" style="padding: 10px 20px; font-size: 14px; background: linear-gradient(45deg, #f1502f, #f1502f);">Git Download</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // إنشاء ملف manifest.json ديناميكيًا
+        const manifestContent = {
+            "name": "Winter Menu",
+            "short_name": "WinterApp",
+            "start_url": "/winter-menu-app/",
+            "display": "standalone",
+            "background_color": "#0a0a2a",
+            "theme_color": "#d116b2",
+            "icons": [
+                {
+                    "src": "icons/icon-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "icons/icon-512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                }
+            ]
+        };
+        
+        // إنشاء service worker بسيط
+        const swContent = `
+        self.addEventListener('install', event => {
+            event.waitUntil(
+                caches.open('winter-app-v1').then(cache => {
+                    return cache.addAll([
+                        './',
+                        './index.html',
+                        './manifest.json'
+                    ]);
+                })
+            );
+        });
+        
+        self.addEventListener('fetch', event => {
+            event.respondWith(
+                caches.match(event.request).then(response => {
+                    return response || fetch(event.request);
+                })
+            );
+        });
+        `;
+        
+        // تحميل الملفات تلقائيًا
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✅ Winter App ready for GitHub');
+            console.log('📁 Upload to: github.com/new');
+            console.log('🔗 Live URL: username.github.io/repo-name');
+            
+            // زر إنشاء QR Code للرابط
+            const btn = document.querySelector('.btn');
+            btn.addEventListener('click', function() {
+                alert('🚀 افتح github.com/new لبدء رفع الملفات');
+            });
+        });
+        
+        // وظيفة توليد رابط GitHub Pages
+        function generateGitHubURL(username, repo) {
+            return `https://${username}.github.io/${repo}/`;
+        }
+        
+        // مثال:
+        const exampleURL = generateGitHubURL('jose-7sx', 'winter-menu');
+        console.log('🔗 Example URL:', exampleURL);
+    </script>
+    
+</body>
+</html
